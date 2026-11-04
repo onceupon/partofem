@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Privacy Policy · Bubble · POEM</title>
+<meta name="description" content="How Bubble: Pop Your To-Dos handles your data.">
+<link rel="canonical" href="https://partofem.com/privacy">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#FBF7EE">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preload" href="/assets/jaldi-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  @font-face { font-family: 'Jaldi'; font-weight: 100 600; font-display: swap; src: url('/assets/jaldi-400-latin.woff2') format('woff2'); }
+  :root { --cream: #FBF7EE; --ink: #3A3127; --muted: #8A7D6B; --gold: #D3AF37; --gold-deep: #B08D2A; --gold-soft: rgba(211, 175, 55, 0.35); }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: 'Jaldi', system-ui, sans-serif;
+    font-weight: 400;
+    color: var(--ink);
+    background:
+      radial-gradient(900px 520px at 50% -10%, rgba(232, 205, 120, 0.28), transparent 70%),
+      var(--cream);
+    background-attachment: fixed;
+    padding: 40px 22px calc(40px + env(safe-area-inset-bottom));
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
+    font-size: 17px;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  .home { display: inline-flex; align-items: center; gap: 10px; color: var(--muted); text-decoration: none; font-size: 15px; letter-spacing: 0.08em; }
+  .home img { width: 40px; height: 40px; border-radius: 50%; background: #fffdf8; box-shadow: 0 0 0 1px var(--gold-soft), 0 6px 16px rgba(120, 95, 40, 0.12); }
+  .home:hover { color: var(--ink); }
+  h1 { font-weight: 400; font-size: 38px; line-height: 1.15; margin: 34px 0 6px; letter-spacing: 0.02em; }
+  .meta { margin: 0 0 28px; color: var(--gold-deep); font-size: 15px; letter-spacing: 0.04em; }
+  h2 { font-weight: 400; font-size: 23px; margin: 34px 0 6px; color: var(--ink); }
+  p, li { color: #4A4034; }
+  ul { padding-left: 22px; margin: 8px 0; }
+  li { margin: 4px 0; }
+  li::marker { color: var(--gold); }
+  a { color: var(--gold-deep); text-underline-offset: 3px; }
+  .card {
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(211, 175, 55, 0.32);
+    border-radius: 22px;
+    padding: 18px 22px;
+    margin: 18px 0;
+    box-shadow: 0 2px 10px rgba(120, 95, 40, 0.06);
+  }
+  .card p { margin: 6px 0; }
+  .muted { color: var(--muted); }
+  footer { margin: 56px auto 0; max-width: 640px; font-size: 13px; color: var(--muted); display: flex; gap: 14px; flex-wrap: wrap; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <a class="home" href="/"><img src="/assets/tree.svg" alt="" width="40" height="40">POEM</a>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Bubble: Pop Your To-Dos &middot; Effective November 5, 2026</p>
+
+  <div class="card">
+    <p>The short version: Bubble keeps as little as it can. You can use it without an account, and then your tasks never leave your device. If you sign in, we keep your tasks so they can sync between your devices. We don't show ads, we don't sell your data, and we don't track you across other apps or websites.</p>
+  </div>
+
+  <h2>Using Bubble without an account</h2>
+  <p>Your bubbles are saved only on your device (in the app, or in your browser's local storage on the web). They are never uploaded. Deleting the app or clearing your browser data removes them.</p>
+
+  <h2>When you sign in</h2>
+  <p>You can sign in with Apple, with Google, or with an email and password. When you do, we keep:</p>
+  <ul>
+    <li>Your email address and name, as shared by Apple or Google, so we know which board is yours. If you choose "Hide My Email" with Apple, we only see Apple's private relay address.</li>
+    <li>Your tasks (your bubbles, tags, and the history of what you've popped), so they're waiting on your other devices.</li>
+    <li>Feedback you choose to send us with the #feedback tag.</li>
+  </ul>
+  <p>Passwords are handled by Amazon Cognito. We never see or store them.</p>
+
+  <h2>The world map</h2>
+  <p>When you pop a bubble, Bubble adds one to a running count for your country, which lights up the world map everyone sees. Your country is worked out on your device from its time zone. Only the total for each country is stored; it isn't linked to you.</p>
+
+  <h2>Anonymous usage analytics</h2>
+  <p>We use PostHog to understand how Bubble is used, so we can make it better. It records simple events such as "a bubble was created" or "a bubble was popped", plus page views. Your analytics are not linked to your account or your email. PostHog estimates a rough country from your IP address. We have turned off session recording and automatic click capture, and the text of your bubbles is never sent. If your browser sends "Do Not Track", analytics stay off.</p>
+
+  <h2>Keeping things safe</h2>
+  <p>To stop abuse, our server briefly counts requests per IP address. These counts are deleted automatically within a few minutes.</p>
+
+  <h2>Who helps us run Bubble</h2>
+  <ul>
+    <li>Amazon Web Services (United States), which stores accounts and synced tasks</li>
+    <li>PostHog (United States), for anonymous analytics</li>
+    <li>Apple and Google, only if you choose to sign in with them</li>
+  </ul>
+  <p>We don't share your data with anyone else, and we never sell it.</p>
+
+  <h2>Deleting your data</h2>
+  <p>Signed in? Open the Account panel and tap <em style="font-style:normal">Delete account</em>. This permanently removes your account, your synced tasks, and the feedback you sent. The anonymous country totals on the world map stay, since they can't be traced back to you. Without an account, just delete the app or clear your browser data.</p>
+  <p>Bubble is a small hobby app, so please keep your own copy of anything that matters. You can export your full task history from the How it works panel.</p>
+
+  <h2>Children</h2>
+  <p>Bubble isn't directed at children under 13, and we don't knowingly collect their information.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, we'll update it here and change the date at the top.</p>
+
+  <h2>Questions</h2>
+  <p>Visit the <a href="/support">Support page</a>, type #feedback followed by your message in the app, or message us on Instagram at <a href="https://www.instagram.com/poem_partofem/" rel="noopener noreferrer">@poem_partofem</a>.</p>
+</main>
+<footer><span>&copy; 2026 Partofem</span><a href="/">Home</a><a href="/support">Support</a></footer>
+</body>
+</html>
